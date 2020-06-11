@@ -1,14 +1,14 @@
 module SessionsHelper
+  def signed_in?
+    session[:current_user_id].nil? ? false : true
+  end
+
   def current_user
     User.find(current_user_id) if signed_in?
   end
 
   def current_user_id
     session[:current_user_id]
-  end
-
-  def signed_in?
-    session[:current_user_id].nil? ? false : true
   end
 
   def create_session(user_id)
