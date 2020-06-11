@@ -1,0 +1,26 @@
+<div class="w-50 mx-auto bg-light my-5 text-center p-2 text-success border border-success rounded">
+  <h1>
+Sign in with your name...
+</h1>
+</div>
+
+<div class="form-signin w-25 m-auto">
+  <%= form_for @user, url: sessions_path, class: 'form-signin w-25 m-auto' do |f| %>
+    <%= f.label :name, class: 'sr-only'  %>
+    <%= f.text_field :username, placeholder: 'Username',
+          required: true, class: 'form-control p-3 h3 text-center py-4' %>
+    <%= f.submit 'Sign In', class: 'btn btn-lg btn-success btn-block mt-5' %>
+  <% end %>
+</div>
+
+<div class="mx-auto my-4 w-25 text-success text-center">
+<span class="badge badge-pill badge-light text-success">
+  <h4>
+    <strong>
+      Quick Access:
+    </strong>
+    </h4>
+  </span>
+</div>
+<div class="border border-light w-50 mx-auto mt-1 mb-5">
+</div>
