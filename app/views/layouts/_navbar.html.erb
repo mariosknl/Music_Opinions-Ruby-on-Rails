@@ -2,19 +2,19 @@
   <span class="px-1">
     <i class="fas fa-ring"></i>
   </span>
-  <%= link_to 'Horns Up Blog', root_path, class: 'navbar-brand' %>
+  <%= link_to "Let's talk about music...", opinions_path, class: 'navbar-brand' %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav d-flex justify-content-around w-75">
-      <%= link_to 'Users', users_path, class: 'navbar-nav d-flex justify-content-around w-75' %>
+      <%= link_to 'Users', users_path, class: 'navbar-nav d-flex justify-content-around w-25' %>
     </ul>
     <ul class="navbar-nav ml-auto d-flex">
-      <%= sign_up_links %>
-
-      <%= sign_out_links %>
+      <li><%= current_user.username %>
+      <li>  <%= sign_up_links %> </li>
+      <li><%= sign_out_links %></li>
     </ul>
   </div>
 </nav>
