@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
     user = User.find_by(username: params[:user][:username])
     if user
       session[:current_user_id] = user.id
-      redirect_to root_path
+      redirect_to opinions_path
     else
       @user = User.new(username: params[:user][:username])
       flash[:notice] = "User doesn't exist"
