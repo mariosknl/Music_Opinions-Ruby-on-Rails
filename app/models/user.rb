@@ -15,25 +15,21 @@ class User < ApplicationRecord
 
   validates :username, presence: true, uniqueness: true, length: { maximum: 30 }
 
-  validates :photo, :coverimage, presence: true
+  validates :photo, presence: true, blob: { content_type: ['image/png',
+                                                           'image/jpg',
+                                                           'image/jpeg'],
+                                            size_range: 1..3.megabytes }
 
-  validate :image_type
+  validates :coverimage, presence: true, blob: { content_type: ['image/png',
+                                                                'image/jpg',
+                                                                'image/jpeg'],
+                                                 size_range: 1..3.megabytes }
 
-  def thumbnail(photo)
-    return self.photo.variant(resize: '100x100!').processed
+  def thumbnail(_photo)
+    photo.variant(resize: '100x100!').processed
   end
 
-  def top(coverimage)
-    return self.coverimage.variant(resize: '100%x35%!').processed
-  end
-
-  private
-  def image_type
-    if photo.attached? == false
-      errors.add(:photo, 'is missing!')
-    end
-    if !photo.content_type.in?(%('image/jpeg image/png'))
-      errors.add(:photo, 'needs to be JPEG or PNG or JPG')
-    end
+  def top(_coverimage)
+    coverimage.variant(resize: '80%x25%!').processed
   end
 end

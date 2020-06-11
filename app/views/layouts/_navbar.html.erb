@@ -8,13 +8,15 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <%= sign_up_links %> 
+    <% if signed_in? %>
     <ul class="navbar-nav d-flex justify-content-around w-75">
       <%= link_to 'Users', users_path, class: 'navbar-nav d-flex justify-content-around w-25' %>
     </ul>
     <ul class="navbar-nav ml-auto d-flex">
       <li><%= current_user.username if signed_in? %> 
-      <li>  <%= sign_up_links %> </li>
       <li><%= sign_out_links %></li>
     </ul>
+    <% end %>
   </div>
 </nav>
