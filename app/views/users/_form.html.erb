@@ -4,11 +4,12 @@
   <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
   <div class="form-inputs">
-    <%= f.input :username %>
-    <%= f.input :fullname %>
-    <%= f.file_field :photo, label: "Profile Picture" %>
-      
-    <%= f.file_field :coverimage, label: "Cover Image" %>
+    <%= f.input :username, hint: 'Your Username plase', error: 'Username is mandatory, please specify one' %>
+    <%= f.input :fullname, label: 'Fullname please' %>
+    <%= f.label :coverimage, label: 'Cover Image' %>
+    <%= f.file_field :coverimage, hint: 'Cover Image' %>
+    <%= f.label :photo, label: 'Profile Picture' %>
+    <%= f.file_field :photo %>
   </div>
 
   <div class="form-actions">

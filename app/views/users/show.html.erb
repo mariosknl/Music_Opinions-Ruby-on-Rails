@@ -1,4 +1,9 @@
 <p id="notice"><%= notice %></p>
 
+
+<%= image_tag(@user.top(:coverimage)) %>
+<%= image_tag(@user.thumbnail(:photo)) %>
+<%= @user.username %>
+
 <%= link_to 'Edit', edit_user_path(@user) %> |
 <%= link_to 'Back', users_path %>
