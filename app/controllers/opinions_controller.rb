@@ -69,6 +69,6 @@ class OpinionsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def opinion_params
-    params.require(:opinion).permit(:opinion)
+    params.require(:opinion).permit(:text)
   end
 end
