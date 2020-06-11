@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :opinions
   root 'welcome#index'
   resources :sessions, only: %i[new create destroy]
   resources :users
