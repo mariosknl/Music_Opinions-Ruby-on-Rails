@@ -3,17 +3,17 @@
     <%= image_tag current_user.photo, class:'media user_photo' %>
     <div class="media-body align-self-center text-break text-wrap">
       <%= link_to "#{current_user.username}",
-        user_path(current_user.id), class: 'text-break text-center text-wrap'%>
+        user_path(current_user.id), class: 'text-break text-center text-wrap ml-3'%>
     </div>
   </div>
 
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-6">
+    <div class="row text-white">
+      <div class="col-6 ">
         <p class="text-center">
           <%= current_user.followings.count %>
         </p>
-        <p class="text-center">Following</p>
+        <p class="text-center ">Following</p>
       </div>
       <div class="col-6 followers">
         <p class="text-center">

@@ -1,14 +1,18 @@
 <div class="right_side">
   <ul class="list-unstyled">
+  <li class="text-center my-0 h4 text-muted">Who To Follow</li>
+  <hr>
   <% @users.each do |user| %>
-    <li class="media mr-3">
-      <%= image_tag user.photo %>
-      <div class="media-body ml-3 my-auto">
+    <li class="media ml-5  my-3">
+    <% if user != current_user %>
+      <%= image_tag user.photo, class: 'rounded-circle user_photo_right mr-2' %>
+      <div class="media-body ml-1 my-auto">
         <p class="mt-0 mb-1"><%= user.fullname %></p>
         <small><%=user.username %></small>
         <%= render 'users/follow', user: user %>
       </div>
     </li>
+    <% end %>
   <% end %>
   </ul>
 </div>

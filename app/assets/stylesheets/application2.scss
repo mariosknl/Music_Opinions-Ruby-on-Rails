@@ -2,6 +2,7 @@
   width: 80%;
   position: relative;
   left: 20%;
+  background-color: #50A1DF;
 }
 
 .left {
@@ -9,10 +10,29 @@
   position: relative;
   bottom: 4.2rem;
   height: 100vh;
-  background-color: red;
+  background-color: #213345;
+  font-size: 0.8rem;
 }
 
 .user_photo {
-  width: 2rem;
-  height: 2rem;
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.notification {
+  position: relative;
+  left: 25%;
+}
+
+.right_side {
+  width: 30%;
+  position: relative;
+  bottom: 27rem;
+  left: 70%;
+  height: 90vh;
+
+  .user_photo_right {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
