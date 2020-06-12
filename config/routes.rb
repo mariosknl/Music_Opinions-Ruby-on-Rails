@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   resources :sessions, only: %i[new create destroy]
   resources :followings, only: %i[new create destroy]
   resources :users
-  root 'welcome#index'
+  root 'sessions#new'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

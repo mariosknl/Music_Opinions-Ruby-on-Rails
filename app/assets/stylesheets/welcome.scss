@@ -4,7 +4,13 @@
 
 .welcome_photo {
   background-image: image-url('welcome_photo.jpeg');
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 50vh;
+  height: 100vh;
+}
+
+.login {
+  position: relative;
+  top: 20%;
+  left: 30%;
 }

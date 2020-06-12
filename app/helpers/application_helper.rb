@@ -9,14 +9,6 @@ module ApplicationHelper
 
   private
 
-  def class_namer(path, color)
-    current_path == path ? "nav-link text-#{color}" : 'nav-link'
-  end
-
-  def current_path
-    request.env['PATH_INFO']
-  end
-
   def sign_up_links
     render 'sessions/sign_up' unless signed_in?
   end
