@@ -5,7 +5,9 @@ class OpinionsController < ApplicationController
   # GET /opinions.json
   def index
     @opinions = Opinion.all.order('created_at DESC')
+    @users = User.all
     @opinion = Opinion.new
+    @user = current_user
   end
 
   # GET /opinions/1

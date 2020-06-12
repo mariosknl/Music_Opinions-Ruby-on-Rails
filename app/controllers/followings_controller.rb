@@ -1,5 +1,4 @@
 class FollowingsController < ApplicationController
-  before_action :authorized_user
   def create
     user = User.find(params[:id])
     current_user.follow(user)
@@ -12,5 +11,11 @@ class FollowingsController < ApplicationController
     current_user.unfollow(user)
     flash[:notice] = "You've successfully unfollowed #{user.username}"
     redirect_to user
+  end
+
+  private
+
+  def follow(_input)
+    Follow.create(followerid: id, followedid: user.id)
   end
 end

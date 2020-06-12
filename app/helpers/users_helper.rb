@@ -5,7 +5,7 @@ module UsersHelper
     if current_user.following?(user)
       render 'users/already', user: user
     else
-      render 'users/follow_btn', user: user
+      render 'users/follow', user: user
     end
   end
 

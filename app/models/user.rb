@@ -18,12 +18,12 @@ class User < ApplicationRecord
   validates :photo, presence: true, blob: { content_type: ['image/png',
                                                            'image/jpg',
                                                            'image/jpeg'],
-                                            size_range: 1..2.megabytes }
+                                            size_range: 0..1.megabytes }
 
   validates :coverimage, presence: true, blob: { content_type: ['image/png',
                                                                 'image/jpg',
                                                                 'image/jpeg'],
-                                                 size_range: 1..2.megabytes }
+                                                 size_range: 0..1.megabytes }
 
   def thumbnail(_photo)
     photo.variant(resize: '100x100!').processed
@@ -31,5 +31,9 @@ class User < ApplicationRecord
 
   def top(_coverimage)
     coverimage.variant(resize: '80%x25%!').processed
+  end
+
+  def follow(input)
+    Follow.create(followerid: id, followedid: input.id)
   end
 end
