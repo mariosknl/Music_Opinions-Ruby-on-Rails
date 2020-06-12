@@ -20800,3 +20800,803 @@ Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 344)
   [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followerid" WHERE "follows"."followedid" = ? LIMIT ?[0m  [["followedid", 1], ["LIMIT", 11]]
   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followedid" WHERE "follows"."followerid" = ? LIMIT ?[0m  [["followerid", 1], ["LIMIT", 11]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started DELETE "/sessions/1" for ::1 at 2020-06-12 16:00:45 +0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JsNMj4ZT6yggZxC2dyfOCb6N5a0F1k+5hBumJiJhpoUa+aJjdSVGXLfNfgfMOgsKNlIgpApw/+emF7uFArkzDw==", "id"=>"1"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 385)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:00:45 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 71)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_new.html.erb (Duration: 35.0ms | Allocations: 6849)
+Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.0ms | Allocations: 12237)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:01:10 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.6ms | Allocations: 127)
+  Rendered sessions/_new.html.erb (Duration: 2.6ms | Allocations: 1076)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 6452)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:01:43 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 124)
+  Rendered sessions/_new.html.erb (Duration: 1.9ms | Allocations: 1068)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 6422)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:02:18 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.3ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 137)
+  Rendered sessions/_new.html.erb (Duration: 1.8ms | Allocations: 1091)
+Completed 200 OK in 15ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 6480)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:02:19 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.2ms | Allocations: 133)
+  Rendered sessions/_new.html.erb (Duration: 1.7ms | Allocations: 1077)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 6435)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:02:34 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered sessions/_new.html.erb (Duration: 1.7ms | Allocations: 1077)
+Completed 200 OK in 12ms (Views: 10.5ms | ActiveRecord: 0.0ms | Allocations: 6460)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:02:35 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered sessions/_new.html.erb (Duration: 0.9ms | Allocations: 643)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 5090)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:02:59 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 135)
+  Rendered sessions/_new.html.erb (Duration: 2.0ms | Allocations: 1081)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 6461)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:03:13 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.4ms | Allocations: 133)
+  Rendered sessions/_new.html.erb (Duration: 2.1ms | Allocations: 1077)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 6431)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:03:14 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.4ms | Allocations: 70)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered sessions/_new.html.erb (Duration: 2.2ms | Allocations: 1086)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 6464)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:03:16 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered sessions/_new.html.erb (Duration: 0.9ms | Allocations: 643)
+Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 5097)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:03:18 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.0ms | Allocations: 35)
+  Rendered sessions/_new.html.erb (Duration: 0.9ms | Allocations: 640)
+Completed 200 OK in 6ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 5100)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:03:26 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered sessions/_new.html.erb (Duration: 1.9ms | Allocations: 1078)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 6448)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:03:31 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.3ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered sessions/_new.html.erb (Duration: 1.9ms | Allocations: 1079)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 6453)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:03:50 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.3ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 135)
+  Rendered sessions/_new.html.erb (Duration: 1.8ms | Allocations: 1087)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 6472)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:03:52 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.3ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered sessions/_new.html.erb (Duration: 2.1ms | Allocations: 1079)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 6477)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:03:58 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered sessions/_new.html.erb (Duration: 1.9ms | Allocations: 1078)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 6466)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:04:00 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered sessions/_new.html.erb (Duration: 1.8ms | Allocations: 1077)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 6441)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:04:01 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.2ms | Allocations: 133)
+  Rendered sessions/_new.html.erb (Duration: 1.7ms | Allocations: 1078)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 6472)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:04:05 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 68)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered sessions/_new.html.erb (Duration: 2.0ms | Allocations: 1087)
+Completed 200 OK in 11ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 6481)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:04:09 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered sessions/_new.html.erb (Duration: 0.9ms | Allocations: 643)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5090)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:05:16 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.4ms | Allocations: 133)
+  Rendered sessions/_new.html.erb (Duration: 2.1ms | Allocations: 1079)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 6460)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:05:34 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered sessions/_new.html.erb (Duration: 1.9ms | Allocations: 1079)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 6451)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:05:45 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered sessions/_new.html.erb (Duration: 2.0ms | Allocations: 1078)
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 6447)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:06:05 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.3ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 134)
+  Rendered sessions/_new.html.erb (Duration: 1.9ms | Allocations: 1090)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 6480)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:06:09 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.3ms | Allocations: 66)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 3.2ms | Allocations: 133)
+  Rendered sessions/_new.html.erb (Duration: 4.9ms | Allocations: 1078)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms | Allocations: 6454)
+
+
+Started GET "/users/new" for ::1 at 2020-06-12 16:06:20 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.6ms | Allocations: 4659)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 4987)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_in.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered layouts/_navbar.html.erb (Duration: 4.0ms | Allocations: 396)
+  Rendered layouts/_left_side.html.erb (Duration: 9.3ms | Allocations: 1540)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 12689)
+
+
+
+ActionView::Template::Error - undefined method `photo' for nil:NilClass:
+  app/views/layouts/_left_side.html.erb:3:in `view template'
+  app/views/layouts/_left_side.html.erb:3
+  app/views/layouts/application.html.erb:26
+
+Started POST "/__better_errors/d825d8ab6e4ac1b2/variables" for ::1 at 2020-06-12 16:06:20 +0300
+Started GET "/" for ::1 at 2020-06-12 16:06:24 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered sessions/_new.html.erb (Duration: 2.7ms | Allocations: 656)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 5115)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:06:27 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.7ms | Allocations: 35)
+  Rendered sessions/_new.html.erb (Duration: 2.1ms | Allocations: 640)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 5089)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:07:06 +0300
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered sessions/_new.html.erb (Duration: 1.1ms | Allocations: 830)
+Completed 200 OK in 18ms (Views: 6.5ms | ActiveRecord: 0.4ms | Allocations: 13398)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:07:08 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered sessions/_new.html.erb (Duration: 0.9ms | Allocations: 637)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 5076)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:07:18 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered sessions/_new.html.erb (Duration: 0.9ms | Allocations: 637)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 5072)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:07:20 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.2ms | Allocations: 137)
+  Rendered sessions/_new.html.erb (Duration: 1.7ms | Allocations: 1080)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 6442)
+
+
+Started GET "/users/new" for ::1 at 2020-06-12 16:07:21 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.2ms | Allocations: 4337)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 4662)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_in.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered layouts/_navbar.html.erb (Duration: 0.8ms | Allocations: 391)
+  Rendered layouts/_left_side.html.erb (Duration: 1.0ms | Allocations: 1539)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms | Allocations: 12340)
+
+
+
+ActionView::Template::Error - undefined method `photo' for nil:NilClass:
+  app/views/layouts/_left_side.html.erb:3:in `view template'
+  app/views/layouts/_left_side.html.erb:3
+  app/views/layouts/application.html.erb:26
+
+Started POST "/__better_errors/92a4bfb1c46c2c4f/variables" for ::1 at 2020-06-12 16:07:21 +0300
+Started GET "/" for ::1 at 2020-06-12 16:07:28 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered sessions/_new.html.erb (Duration: 1.0ms | Allocations: 644)
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 5088)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:08:22 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered sessions/_new.html.erb (Duration: 0.9ms | Allocations: 637)
+Completed 200 OK in 8ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 5083)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:08:31 +0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.9ms | Allocations: 385)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 142)
+  Rendered sessions/_new.html.erb (Duration: 27.4ms | Allocations: 8519)
+Completed 200 OK in 133ms (Views: 115.4ms | ActiveRecord: 0.5ms | Allocations: 43890)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:08:36 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered sessions/_new.html.erb (Duration: 1.1ms | Allocations: 639)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 5091)
+
+
+Started GET "/users/new" for ::1 at 2020-06-12 16:08:38 +0300
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 15.5ms | Allocations: 4710)
+  Rendered users/new.html.erb within layouts/application (Duration: 16.7ms | Allocations: 5039)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_in.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered layouts/_navbar.html.erb (Duration: 1.1ms | Allocations: 400)
+  Rendered layouts/_left_side.html.erb (Duration: 5.8ms | Allocations: 1844)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 13076)
+
+
+
+ActionView::Template::Error - undefined method `photo' for nil:NilClass:
+  app/views/layouts/_left_side.html.erb:3:in `view template'
+  app/views/layouts/_left_side.html.erb:3
+  app/views/layouts/application.html.erb:26
+
+Started POST "/__better_errors/212b434edfb9d289/variables" for ::1 at 2020-06-12 16:08:38 +0300
+Started GET "/" for ::1 at 2020-06-12 16:08:54 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.1ms | Allocations: 36)
+  Rendered sessions/_new.html.erb (Duration: 1.3ms | Allocations: 644)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms | Allocations: 5110)
+
+
+Started POST "/sessions" for ::1 at 2020-06-12 16:08:55 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"fEGqT6pmB//xF6jPX1ZEhA27Q6UC3oKqS1wZGke3hKVAe0SjWRCqi2a9xn7kS4GHhWSGrA14MvRpUAS5Z28RLw==", "user"=>{"username"=>""}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:12:in `create'
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.1ms | Allocations: 35)
+  Rendered sessions/_new.html.erb (Duration: 1.1ms | Allocations: 651)
+Completed 200 OK in 13ms (Views: 10.2ms | ActiveRecord: 0.2ms | Allocations: 6100)
+
+
+Started POST "/sessions" for ::1 at 2020-06-12 16:09:00 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"fEGqT6pmB//xF6jPX1ZEhA27Q6UC3oKqS1wZGke3hKVAe0SjWRCqi2a9xn7kS4GHhWSGrA14MvRpUAS5Z28RLw==", "user"=>{"username"=>"mariosknl"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "mariosknl"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:12:in `create'
+Redirected to http://localhost:3000/opinions
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 942)
+
+
+Started GET "/opinions" for ::1 at 2020-06-12 16:09:00 +0300
+Processing by OpinionsController#index as HTML
+  Rendering opinions/index.html.erb within layouts/application
+  Rendered opinions/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 72)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_out.html.erb (Duration: 0.5ms | Allocations: 169)
+  Rendered layouts/_navbar.html.erb (Duration: 1.0ms | Allocations: 380)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mActiveStorage::Attachment Load (0.5ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followedid" WHERE "follows"."followerid" = ?[0m  [["followerid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followerid" WHERE "follows"."followedid" = ?[0m  [["followedid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:20
+  Rendered layouts/_left_side.html.erb (Duration: 59.6ms | Allocations: 27114)
+Completed 200 OK in 75ms (Views: 64.3ms | ActiveRecord: 3.0ms | Allocations: 36192)
+
+
+Started GET "/rails/active_storage/blobs/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cb96f57e3050b32e2a65aad8f585d351ca6eedd5/horns_up.jpeg" for ::1 at 2020-06-12 16:09:00 +0300
+Processing by ActiveStorage::BlobsController#show as JPEG
+  Parameters: {"signed_id"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBDUT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--cb96f57e3050b32e2a65aad8f585d351ca6eedd5", "filename"=>"horns_up"}
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+[36m  Disk Storage (0.9ms) [0m[34mGenerated URL for file at key: yxe7j4b8d0xvrmqwcmwa4jebldxf (http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f/horns_up.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22horns_up.jpeg%22%3B+filename%2A%3DUTF-8%27%27horns_up.jpeg)[0m
+Redirected to http://localhost:3000/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f/horns_up.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22horns_up.jpeg%22%3B+filename%2A%3DUTF-8%27%27horns_up.jpeg
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms | Allocations: 2151)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f/horns_up.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22horns_up.jpeg%22%3B+filename%2A%3DUTF-8%27%27horns_up.jpeg" for ::1 at 2020-06-12 16:09:00 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"horns_up.jpeg\"; filename*=UTF-8''horns_up.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f", "filename"=>"horns_up"}
+Completed 200 OK in 1ms (ActiveRecord: 0.0ms | Allocations: 402)
+
+
+Started GET "/opinions" for ::1 at 2020-06-12 16:09:04 +0300
+Processing by OpinionsController#index as HTML
+  Rendering opinions/index.html.erb within layouts/application
+  Rendered opinions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_out.html.erb (Duration: 0.2ms | Allocations: 62)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 131)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followedid" WHERE "follows"."followerid" = ?[0m  [["followerid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followerid" WHERE "follows"."followedid" = ?[0m  [["followedid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:20
+  Rendered layouts/_left_side.html.erb (Duration: 8.7ms | Allocations: 6762)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.6ms | Allocations: 11463)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f/horns_up.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22horns_up.jpeg%22%3B+filename%2A%3DUTF-8%27%27horns_up.jpeg" for ::1 at 2020-06-12 16:09:04 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"horns_up.jpeg\"; filename*=UTF-8''horns_up.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f", "filename"=>"horns_up"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 348)
+
+
+Started GET "/opinions" for ::1 at 2020-06-12 16:09:06 +0300
+Processing by OpinionsController#index as HTML
+  Rendering opinions/index.html.erb within layouts/application
+  Rendered opinions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_out.html.erb (Duration: 0.1ms | Allocations: 62)
+  Rendered layouts/_navbar.html.erb (Duration: 0.2ms | Allocations: 130)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followedid" WHERE "follows"."followerid" = ?[0m  [["followerid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followerid" WHERE "follows"."followedid" = ?[0m  [["followedid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:20
+  Rendered layouts/_left_side.html.erb (Duration: 7.3ms | Allocations: 6759)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.5ms | Allocations: 11443)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f/horns_up.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22horns_up.jpeg%22%3B+filename%2A%3DUTF-8%27%27horns_up.jpeg" for ::1 at 2020-06-12 16:09:06 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"horns_up.jpeg\"; filename*=UTF-8''horns_up.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f", "filename"=>"horns_up"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 348)
+
+
+Started GET "/opinions" for ::1 at 2020-06-12 16:10:16 +0300
+Processing by OpinionsController#index as HTML
+  Rendering opinions/index.html.erb within layouts/application
+  Rendered opinions/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 70)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_out.html.erb (Duration: 0.8ms | Allocations: 161)
+  Rendered layouts/_navbar.html.erb (Duration: 1.4ms | Allocations: 486)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followedid" WHERE "follows"."followerid" = ?[0m  [["followerid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followerid" WHERE "follows"."followedid" = ?[0m  [["followedid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:20
+  Rendered layouts/_left_side.html.erb (Duration: 9.9ms | Allocations: 6930)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.7ms | Allocations: 13372)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f/horns_up.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22horns_up.jpeg%22%3B+filename%2A%3DUTF-8%27%27horns_up.jpeg" for ::1 at 2020-06-12 16:10:16 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"horns_up.jpeg\"; filename*=UTF-8''horns_up.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f", "filename"=>"horns_up"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 354)
+
+
+Started DELETE "/sessions/1" for ::1 at 2020-06-12 16:10:20 +0300
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+qUXEkkh0feQQaQToHn/CT/fFmyl+4ANYzm1dw5yuvbGn/n+uld8gwfryqIbZDoKtwDTZapdMFNBNajULqovfA==", "id"=>"1"}
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 336)
+
+
+Started GET "/" for ::1 at 2020-06-12 16:10:20 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.2ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 145)
+  Rendered sessions/_new.html.erb (Duration: 2.0ms | Allocations: 1097)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.0ms | Allocations: 6467)
+
+
+Started POST "/users/new" for ::1 at 2020-06-12 16:10:22 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/users/new"):
+  
+actionpack (6.0.3.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.2) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.2) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.2) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.2) lib/rack/method_override.rb:24:in `call'
+rack (2.2.2) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.2) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.5) lib/puma/configuration.rb:228:in `call'
+puma (4.3.5) lib/puma/server.rb:713:in `handle_request'
+puma (4.3.5) lib/puma/server.rb:472:in `process_client'
+puma (4.3.5) lib/puma/server.rb:328:in `block in run'
+puma (4.3.5) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-06-12 16:10:37 +0300
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.3ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.3ms | Allocations: 145)
+  Rendered sessions/_new.html.erb (Duration: 1.8ms | Allocations: 1094)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 6472)
+
+
+Started POST "/sessions" for ::1 at 2020-06-12 16:10:43 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"wlZ2oZj8h3uLABvotWtRzTPd386Y1CBgqfH9SIgTmdv+bJhNa4oqDxyqdVkOdpTOuwIax5dykD6L/eDrqMsMUQ==", "user"=>{"username"=>""}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:12:in `create'
+  Rendering sessions/new.html.erb within layouts/welcome
+  Rendered sessions/new.html.erb within layouts/welcome (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_up.html.erb (Duration: 0.1ms | Allocations: 47)
+  Rendered sessions/_new.html.erb (Duration: 0.9ms | Allocations: 654)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.1ms | Allocations: 5660)
+
+
+Started POST "/sessions" for ::1 at 2020-06-12 16:10:48 +0300
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"wlZ2oZj8h3uLABvotWtRzTPd386Y1CBgqfH9SIgTmdv+bJhNa4oqDxyqdVkOdpTOuwIax5dykD6L/eDrqMsMUQ==", "user"=>{"username"=>"mariosknl"}, "commit"=>"Sign In"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "mariosknl"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:12:in `create'
+Redirected to http://localhost:3000/opinions
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms | Allocations: 893)
+
+
+Started GET "/opinions" for ::1 at 2020-06-12 16:10:48 +0300
+Processing by OpinionsController#index as HTML
+  Rendering opinions/index.html.erb within layouts/application
+  Rendered opinions/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 65)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_out.html.erb (Duration: 0.4ms | Allocations: 161)
+  Rendered layouts/_navbar.html.erb (Duration: 1.2ms | Allocations: 486)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followedid" WHERE "follows"."followerid" = ?[0m  [["followerid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followerid" WHERE "follows"."followedid" = ?[0m  [["followedid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:20
+  Rendered layouts/_left_side.html.erb (Duration: 8.1ms | Allocations: 6930)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.5ms | Allocations: 13350)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f/horns_up.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22horns_up.jpeg%22%3B+filename%2A%3DUTF-8%27%27horns_up.jpeg" for ::1 at 2020-06-12 16:10:48 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"horns_up.jpeg\"; filename*=UTF-8''horns_up.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f", "filename"=>"horns_up"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 344)
+
+
+Started GET "/opinions" for ::1 at 2020-06-12 16:11:50 +0300
+Processing by OpinionsController#index as HTML
+  Rendering opinions/index.html.erb within layouts/application
+  Rendered opinions/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_out.html.erb (Duration: 0.1ms | Allocations: 63)
+  Rendered layouts/_navbar.html.erb (Duration: 0.3ms | Allocations: 132)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followedid" WHERE "follows"."followerid" = ?[0m  [["followerid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followerid" WHERE "follows"."followedid" = ?[0m  [["followedid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:20
+  Rendered layouts/_left_side.html.erb (Duration: 11.3ms | Allocations: 6752)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.5ms | Allocations: 11437)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f/horns_up.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22horns_up.jpeg%22%3B+filename%2A%3DUTF-8%27%27horns_up.jpeg" for ::1 at 2020-06-12 16:11:51 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"horns_up.jpeg\"; filename*=UTF-8''horns_up.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f", "filename"=>"horns_up"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 350)
+
+
+Started GET "/opinions" for ::1 at 2020-06-12 16:12:08 +0300
+Processing by OpinionsController#index as HTML
+  Rendering opinions/index.html.erb within layouts/application
+  Rendered opinions/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 70)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered sessions/_sign_out.html.erb (Duration: 0.3ms | Allocations: 162)
+  Rendered layouts/_navbar.html.erb (Duration: 0.9ms | Allocations: 487)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mActiveStorage::Attachment Load (0.1ms)[0m  [1m[34mSELECT "active_storage_attachments".* FROM "active_storage_attachments" WHERE "active_storage_attachments"."record_id" = ? AND "active_storage_attachments"."record_type" = ? AND "active_storage_attachments"."name" = ? LIMIT ?[0m  [["record_id", 1], ["record_type", "User"], ["name", "photo"], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mActiveStorage::Blob Load (0.1ms)[0m  [1m[34mSELECT "active_storage_blobs".* FROM "active_storage_blobs" WHERE "active_storage_blobs"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:3
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followedid" WHERE "follows"."followerid" = ?[0m  [["followerid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:14
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:7:in `current_user'
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followerid" WHERE "follows"."followedid" = ?[0m  [["followedid", 1]]
+  ↳ app/views/layouts/_left_side.html.erb:20
+  Rendered layouts/_left_side.html.erb (Duration: 7.4ms | Allocations: 6930)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.5ms | Allocations: 13377)
+
+
+Started GET "/rails/active_storage/disk/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f/horns_up.jpeg?content_type=image%2Fjpeg&disposition=inline%3B+filename%3D%22horns_up.jpeg%22%3B+filename%2A%3DUTF-8%27%27horns_up.jpeg" for ::1 at 2020-06-12 16:12:08 +0300
+Processing by ActiveStorage::DiskController#show as JPEG
+  Parameters: {"content_type"=>"image/jpeg", "disposition"=>"inline; filename=\"horns_up.jpeg\"; filename*=UTF-8''horns_up.jpeg", "encoded_key"=>"eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9JYTJWNVNTSWhlWGhsTjJvMFlqaGtNSGgyY20xeGQyTnRkMkUwYW1WaWJHUjRaZ1k2QmtWVU9oQmthWE53YjNOcGRHbHZia2tpUldsdWJHbHVaVHNnWm1sc1pXNWhiV1U5SW1odmNtNXpYM1Z3TG1wd1pXY2lPeUJtYVd4bGJtRnRaU285VlZSR0xUZ25KMmh2Y201elgzVndMbXB3WldjR093WlVPaEZqYjI1MFpXNTBYM1I1Y0dWSklnOXBiV0ZuWlM5cWNHVm5CanNHVkE9PSIsImV4cCI6IjIwMjAtMDYtMTJUMTM6MTQ6MDAuODk3WiIsInB1ciI6ImJsb2Jfa2V5In19--c340ca6d01e4135718d284c1647425b8c37a7b9f", "filename"=>"horns_up"}
+Completed 304 Not Modified in 1ms (ActiveRecord: 0.0ms | Allocations: 338)
+
+
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" INNER JOIN "follows" ON "users"."id" = "follows"."followerid" WHERE "follows"."followedid" = ? LIMIT ?[0m  [["followedid", 1], ["LIMIT", 11]]

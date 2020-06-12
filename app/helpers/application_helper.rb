@@ -10,6 +10,6 @@ module ApplicationHelper
   private
 
   def sign_up_links
-    render 'sessions/sign_up' unless signed_in?
+    render 'sessions/sign_up'
   end
 end
