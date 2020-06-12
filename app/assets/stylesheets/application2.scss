@@ -1,14 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .nav_size {
-  width: 80%;
+  width: 82%;
   position: relative;
   left: 20%;
   background-color: #50A1DF;
 }
 
-.left {
+.left-side {
   width: 20%;
-  position: relative;
-  bottom: 4.2rem;
+  position: fixed;
+  bottom: 2rem;
   height: 100vh;
   background-color: #213345;
   font-size: 0.8rem;
@@ -25,11 +31,11 @@
 }
 
 .right_side {
-  width: 30%;
-  position: relative;
-  bottom: 27rem;
-  left: 70%;
+  width: 20%;
+  position: fixed;
+  left: 75%;
   height: 90vh;
+  border-left: 1px solid rgb(196, 196, 196);
 
   .user_photo_right {
     width: 2.5rem;

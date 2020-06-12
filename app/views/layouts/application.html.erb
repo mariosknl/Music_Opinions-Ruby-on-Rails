@@ -13,16 +13,18 @@
 
   <body>
     <%= render 'layouts/navbar' %>
-        <% if flash[:notice] %>
-      <div class="notification">
-        <p class="notice"><%= notice %></p>
-      </div>
-    <%end %>
-    <% if flash[:alert] %>
-      <div class="notification bg-danger">
-        <p class="alert"><%= alert %></p>
-      </div>
-    <% end %>
+
+      <% if flash[:notice] %>
+        <div class="notification">
+          <p class="notice"><%= notice %></p>
+        </div>
+      <%end %>
+      <% if flash[:alert] %>
+        <div class="notification bg-danger">
+          <p class="alert"><%= alert %></p>
+        </div>
+      <% end %>
+    <%= render 'opinions/form' %>
     <%= render 'layouts/left_side' %>
     <%= render 'layouts/right_side' %>
     <%= yield %>
