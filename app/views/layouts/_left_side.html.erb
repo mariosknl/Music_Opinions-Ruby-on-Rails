@@ -1,26 +1,27 @@
 <div class="left">
-  <div class="media p-3 current_user d-flex">
-    <%#= image_tag current_user.photo, class:'media user_photo' %>
+  <div class="media p-3 current_user d-flex mt-3">
+    <%= image_tag current_user.photo, class:'media user_photo' %>
     <div class="media-body align-self-center text-break text-wrap">
       <%= link_to "#{current_user.username}",
         user_path(current_user.id), class: 'text-break text-center text-wrap'%>
     </div>
   </div>
-</div>
 
-<div class="container-fluid m-0 p-0 stats">
-  <div class="row m-0 p-0">
-    <div class="col-6 py-4">
-      <p class="text-center">
-        <%= current_user.followings.count %>
-      </p>
-      <h5 class="text-center">Following</h5>
-    </div>
-    <div class="col-6 py-4 followers">
-      <p class="text-center">
-        <%= current_user.followers.count %>
-      </p>
-      <h5 class="text-center">Followers</h5>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-6">
+        <p class="text-center">
+          <%= current_user.followings.count %>
+        </p>
+        <p class="text-center">Following</p>
+      </div>
+      <div class="col-6 followers">
+        <p class="text-center">
+          <%= current_user.followers.count %>
+        </p>
+        <p class="text-center">Followers</p>
+      </div>
     </div>
   </div>
 </div>
+<hr>
