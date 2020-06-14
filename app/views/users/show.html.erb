@@ -1,9 +1,19 @@
-<p id="notice"><%= notice %></p>
+<div class="opinion-form">
+  <p id="notice"><%= notice %></p>
 
 
-<%= image_tag(@user.top(:coverimage)) %>
-<%= image_tag(@user.thumbnail(:photo)) %>
-<%= @user.username %>
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+  <div class="card ml-5">
+    <%= image_tag(@user.top(:coverimage)) %>
+      <div class="media">
+        <%= image_tag(@user.thumbnail(:photo)) %>
+          <div class="media-body ml-2">
+            <h5 class="mt-0"><%= @user.fullname %></h5>
+            <small class="username"><%= @user.username %></small>
+            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+          </div>
+  <%= link_to 'Edit', edit_user_path(@user) %> |
+  <%= link_to 'Back', root_path %>
+        </div>
+  </div>
+</div>

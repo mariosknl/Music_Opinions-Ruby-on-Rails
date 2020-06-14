@@ -1,15 +1,8 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: %i[show edit update destroy]
+  before_action :set_user, only: %i[show edit update destroy create]
 
-  # GET /users
-  # GET /users.json
   def index
     @users = User.all
-  end
-
-  def show
-    @users = User.all
-    @user = User.find(params[:id])
   end
 
   def new
@@ -20,21 +13,26 @@ class UsersController < ApplicationController
     @user = User.create(user_params)
     if @user.save
       @user = User.find_by(username: @user.username)
-      signed_in? ? redirect_to(new_user_path) : create_session_and_redirect(@user)
+      create_session(@user)
     else
       render :new
     end
   end
 
+  def show
+    @users = User.all
+    @user = User.find(params[:id])
+  end
+
+  def edit
+    @user = User.find(params[:id])
+  end
+
   def update
-    respond_to do |format|
-      if @user.update(user_params)
-        format.html { redirect_to @user, notice: 'User was successfully updated.' }
-
-      else
-        format.html { render :edit }
-
-      end
+    if @user.update(user_params)
+      redirect_to @user, notice: 'User was successfully updated.'
+    else
+      render :edit
     end
   end
 

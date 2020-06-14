@@ -15,10 +15,10 @@ class User < ApplicationRecord
 
   validates :username, presence: true, uniqueness: true, length: { maximum: 30 }
 
-  validates :photo, presence: true, blob: { content_type: ['image/png',
-                                                           'image/jpg',
-                                                           'image/jpeg'],
-                                            size_range: 0..1.megabytes }
+  validates :photo, blob: { content_type: ['image/png',
+                                           'image/jpg',
+                                           'image/jpeg'],
+                            size_range: 0..1.megabytes }
 
   validates :coverimage, presence: true, blob: { content_type: ['image/png',
                                                                 'image/jpg',
