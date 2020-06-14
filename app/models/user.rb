@@ -33,12 +33,12 @@ class User < ApplicationRecord
     coverimage.variant(resize: '80%x25%!').processed
   end
 
-  def follow(_input)
+  def follow(user)
     following = Follow.new(followerid: id, followedid: user.id)
     following.save
   end
 
-  def unfollow(_input)
+  def unfollow(user)
     Follow.where(followerid: id, followedid: user.id)
   end
 

@@ -1,10 +1,14 @@
 <div class="opinion-form">
   <%= render 'form' %>
 
-  <% @opinions.each do |opinion| %>
-    <div class="opinion-form">
-      <%= opinion.user.username %>
-      <%= opinion.text %>
+<% @opinions.each do |opinion| %>
+  <ul class="list-unstyled">
+    <div class="media border ml-4">
+      <%= image_tag @user.thumbnail(:photo), class: "align-self-center user_photo" %>
+      <div class="media-body ml-3">
+        <%= opinion.text %>
+        <p class="mt-0 text-muted"><%= time_ago_in_words(opinion.created_at) %> </p>
+      </div>
     </div>
-  <% end %>
-</div>
+  </ul>
+<% end %>

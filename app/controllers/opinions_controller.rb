@@ -1,12 +1,9 @@
 class OpinionsController < ApplicationController
-  before_action :check_authorization
-
-  # GET /opinions
-  # GET /opinions.json
   def index
     @opinions = Opinion.all.order('created_at DESC')
     @opinion = current_user.opinions.build
     @user = current_user
+    @users = User.all
   end
 
   def new

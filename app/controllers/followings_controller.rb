@@ -3,7 +3,7 @@ class FollowingsController < ApplicationController
     user = User.find(params[:id])
     current_user.follow(user)
     flash[:notice] = "You've successfully followed #{user.username}"
-    redirect_to user
+    redirect_to root_path
   end
 
   def destroy
@@ -15,7 +15,7 @@ class FollowingsController < ApplicationController
 
   private
 
-  def follow(_input)
+  def follow(user)
     Follow.create(followerid: id, followedid: user.id)
   end
 end

@@ -12,5 +12,4 @@ kubilay = User.create(username: 'kubilay')
 frank = User.create(username: 'frank')
 taofeek = User.create(username: 'taofeek')
 Iryn = User.create(username: 'Iryn')
-byebug
 puts 'seeded'
