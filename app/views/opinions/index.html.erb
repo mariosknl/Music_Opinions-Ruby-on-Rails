@@ -4,12 +4,17 @@
 
   <% @opinions.each do |opinion| %>
     <ul class="list-unstyled">
-      <div class="media border ml-4">
+      <li class="media border ml-4">
         <%= image_tag opinion.user.thumbnail(:photo), class: "align-self-center user_photo" %>
         <div class="media-body ml-3">
           <%= opinion.text %>
           <p class="mt-0 text-muted"><%= time_ago_in_words(opinion.created_at) %> </p>
+          <hr>
+          <strong>Comments...</strong>
+          <p><%= opinion.comments.count %> Comments</p>
+          <%= render opinion.comments %>
+          <%= render 'comments/form' %>
         </div>
-      </div>
+      </li>
     </ul>
   <% end %>

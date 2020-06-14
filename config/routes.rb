@@ -1,7 +1,9 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  resources :opinions
+  resources :opinions do
+    resources :comments
+  end
   resources :sessions, only: %i[new create destroy]
   resources :followings, only: %i[new create destroy]
   resources :users

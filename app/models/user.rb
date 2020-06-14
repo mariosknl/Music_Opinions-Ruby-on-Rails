@@ -13,6 +13,8 @@ class User < ApplicationRecord
 
   has_many :followings, through: :given_follows, source: :followed
 
+  # has_many :comments, dependent: :destroy
+
   validates :username, presence: true, uniqueness: true, length: { maximum: 30 }
 
   validates :photo, blob: { content_type: ['image/png',
