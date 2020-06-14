@@ -33,7 +33,17 @@ class User < ApplicationRecord
     coverimage.variant(resize: '80%x25%!').processed
   end
 
-  def follow(input)
-    Follow.create(followerid: id, followedid: input.id)
+  def follow(_input)
+    following = Follow.new(followerid: id, followedid: user.id)
+    following.save
+  end
+
+  def unfollow(_input)
+    Follow.where(followerid: id, followedid: user.id)
+  end
+
+  def opinions_showing
+    ids = followings.ids << id
+    Opinion.where(author_id: ids).order(id: :desc)
   end
 end

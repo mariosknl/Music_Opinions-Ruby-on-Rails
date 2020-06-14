@@ -1,0 +1,10 @@
+<div class="opinion-form">
+  <%= render 'form' %>
+
+  <% @opinions.each do |opinion| %>
+    <div class="opinion-form">
+      <%= opinion.user.username %>
+      <%= opinion.text %>
+    </div>
+  <% end %>
+</div>
