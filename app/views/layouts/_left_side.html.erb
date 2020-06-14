@@ -11,15 +11,13 @@
     <div class="row text-white">
       <div class="col-6 ">
         <p class="text-center">
-          <%= current_user.followings.count %>
+          <%= pluralize(current_user.followings.count, "following") %>
         </p>
-        <p class="text-center ">Following</p>
       </div>
       <div class="col-6 followers">
         <p class="text-center">
-          <%= current_user.followers.count %>
+          <%= pluralize(current_user.followers.count, "followers") %>
         </p>
-        <p class="text-center">Followers</p>
       </div>
     </div>
   </div>

@@ -7,7 +7,8 @@
     <% if user != current_user %>
       <%= image_tag user.photo, class: 'rounded-circle user_photo_right mr-2' %>
       <div class="media-body ml-1 my-auto">
-        <p class="mt-0 mb-1"><%= user.fullname %></p>
+        <p class="mt-0 mb-1">
+        <%= link_to "#{user.fullname}" %></p>
         <small><%=user.username %></small>
         <%= render 'users/follow', user: user %>
       </div>
