@@ -1,9 +1,9 @@
 class OpinionsController < ApplicationController
   def index
-    @opinions = Opinion.all.order('created_at DESC')
+    @opinions = current_user.opinions_showing.includes(:user)
     @opinion = current_user.opinions.build
-    @user = current_user
     @users = User.all
+    @user = current_user
   end
 
   def new

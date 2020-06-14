@@ -39,7 +39,11 @@ class User < ApplicationRecord
   end
 
   def unfollow(user)
-    Follow.where(followerid: id, followedid: user.id)
+    Follow.where(followerid: id, followedid: user.id).first.destroy
+  end
+
+  def following?(user)
+    !Follow.where(followerid: id, followedid: user.id).empty?
   end
 
   def opinions_showing

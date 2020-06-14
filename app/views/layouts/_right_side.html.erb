@@ -8,7 +8,7 @@
       <%= image_tag user.photo, class: 'user_photo' %>
       <div class="media-body ml-1 my-auto">
         <p class="mt-0 mb-1">
-        <small><%= link_to "#{user.username}" %></small>
+        <small><%= link_to "#{user.username}", user_path(id: user.id) %></small>
         <%= render 'users/follow', user: user %>
       </div>
     </li>
