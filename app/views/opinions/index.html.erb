@@ -14,10 +14,6 @@
           <%= opinion.text %>
           <p class="mt-0 text-muted"><%= time_ago_in_words(opinion.created_at) %> </p>
           <hr>
-          <strong>Comments...</strong>
-          <p><%= opinion.comments.count %> Comments</p>
-          <%= render opinion.comments %>
-          <%= render 'comments/form' %>
         </div>
       </li>
     </ul>

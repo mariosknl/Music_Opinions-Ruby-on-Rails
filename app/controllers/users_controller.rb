@@ -22,6 +22,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @users = User.all
     @followers = @user.followers.includes(:photo)
+    @opinions = Opinion.all.where(id: @user.id)
   end
 
   def edit

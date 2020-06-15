@@ -14,16 +14,20 @@
             <%= image_tag(@user.top(:coverimage)) %>
           </li>
           <li class="follow-btn rounded">
-            <%= render 'users/follow_btn' %>
+            <%= render 'users/follow_btn' unless current_user = @user %>
           </li>
           <li>
-              <small class="username"><%= @user.username %></small>
+              <small class="username">@<%= @user.username %></small>
+          </li>
+          <li>
+            <h5 class="username_right_side"><%= @user.fullname %></h5>
+          
           </li>
         </div>
         <div class="media">
           <div class="media-body mx-2">
-            <h5 class="username_right_side"><%= @user.fullname %></h5>
-            </div>
+            <%= render 'opinions/recent_opinions' %>
+          </div>
         </div>
     </ul>
   </div>

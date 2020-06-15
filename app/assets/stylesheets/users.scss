@@ -2,10 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-.username {
-  position: relative;
-  bottom: 1rem;
-}
 
 .userpage {
   width: 80%;
@@ -13,6 +9,12 @@
   position: absolute;
   left: 19.9%;
   top: 9%;
+  
+  .username {
+    position: absolute;
+    top: 50%;
+    right: 12%;
+  }
 
   .media {
     height: 100%;

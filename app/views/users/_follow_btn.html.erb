@@ -1,6 +1,6 @@
 <div class="btn btn-light rounded-circle">
   <% if !current_user.following?(@user) %>
-    <%= link_to 'Follow', followings_path(id: @user.id), method: :post, class: 'text-dark' unless current_user.following?(@user) %>
+    <%= link_to 'Follow', followings_path(id: @user.id), method: :post, class: 'text-dark' %>
   <% else %>
     <%= link_to 'Unfollow', following_path(id: @user.id), method: :delete, class: 'text-dark' %>
   <% end %>
