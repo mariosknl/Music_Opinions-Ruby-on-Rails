@@ -14,7 +14,7 @@
             <%= image_tag(@user.top(:coverimage)) %>
           </li>
           <li class="follow-btn rounded">
-            <%= render 'users/follow_btn' unless current_user = @user %>
+            <%= render 'users/follow_btn' unless @user == current_user %>
           </li>
           <li>
               <small class="username">@<%= @user.username %></small>
@@ -26,7 +26,6 @@
         </div>
         <div class="media">
           <div class="media-body mx-2">
-            <%#= render 'opinions/recent_opinions' %>
           </div>
         </div>
     </ul>
