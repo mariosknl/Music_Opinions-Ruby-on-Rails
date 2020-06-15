@@ -20,10 +20,10 @@ class User < ApplicationRecord
                                            'image/jpeg'],
                             size_range: 0..1.megabytes }
 
-  validates :coverimage, presence: true, blob: { content_type: ['image/png',
-                                                                'image/jpg',
-                                                                'image/jpeg'],
-                                                 size_range: 0..1.megabytes }
+  validates :coverimage, blob: { content_type: ['image/png',
+                                                'image/jpg',
+                                                'image/jpeg'],
+                                 size_range: 0..1.megabytes }
 
   def thumbnail(_photo)
     photo.variant(resize: '100x100!').processed
