@@ -2,14 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-
 .userpage {
   width: 80%;
   height: 80vh;
   position: absolute;
   left: 19.9%;
   top: 9%;
-  
+
   .username {
     position: absolute;
     top: 50%;
@@ -20,7 +19,7 @@
     height: 100%;
   }
 
-  .username_cover{
+  .username_cover {
     width: 80%;
     height: 80%;
   }
