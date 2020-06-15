@@ -1,7 +1,11 @@
-<div class="opinion-form">
+
+    <%= render 'layouts/navbar' %>
+    <%= render 'layouts/left_side' %>
+    <%= render 'layouts/right_side' %>
   <%= render 'form' %>
 
 
+<div class="opinions">
   <% @opinions.each do |opinion| %>
     <ul class="list-unstyled">
       <li class="media border ml-4">

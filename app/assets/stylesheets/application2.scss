@@ -6,8 +6,9 @@
 }
 
 .nav_size {
-  width: 82%;
-  position: relative;
+  width: 80%;
+  position: absolute;
+  top: 0;
   left: 20%;
   background-color: #50A1DF;
 }
@@ -28,7 +29,7 @@
 
 .notification {
   position: relative;
-  left: 25%;
+  left: 22%;
 }
 
 .right_side {
@@ -43,4 +44,18 @@
     width: 2.5rem;
     height: 2.5rem;
   }
+}
+
+.opinion-form {
+  width: 54.6%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.opinions {
+  position: absolute;
+  width: 56%;
+  top: 45%;
+  left: 18%;
 }

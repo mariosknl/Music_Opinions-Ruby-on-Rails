@@ -10,6 +10,6 @@ class FollowingsController < ApplicationController
     user = User.find(params[:id])
     current_user.unfollow(user)
     flash[:notice] = "You've successfully unfollowed #{user.username}"
-    redirect_to current_user
+    redirect_to opinions_path
   end
 end

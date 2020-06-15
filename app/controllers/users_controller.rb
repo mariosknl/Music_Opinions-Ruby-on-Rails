@@ -1,6 +1,4 @@
 class UsersController < ApplicationController
-  before_action :set_user, only: %i[show edit update destroy create]
-
   def index
     @users = User.all
   end
@@ -10,10 +8,11 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.create(user_params)
+    @user = User.new(user_params)
     if @user.save
       @user = User.find_by(username: @user.username)
       create_session(@user)
+      redirect_to opinions_path
     else
       render :new
     end
@@ -46,6 +45,10 @@ class UsersController < ApplicationController
   private
 
   def set_user
+    if params[:id].to_i > User.last.id.to_i
+      redirect_to root_path
+      return
+    end
     @user = User.find(params[:id])
   end
 

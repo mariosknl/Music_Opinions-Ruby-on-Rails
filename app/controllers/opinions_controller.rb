@@ -1,4 +1,5 @@
 class OpinionsController < ApplicationController
+  before_action :authorized_user
   def index
     @opinions = current_user.opinions_showing.includes(:user)
     @opinion = current_user.opinions.build
