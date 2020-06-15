@@ -1,19 +1,31 @@
-<div class="opinion-form">
+
+    <%= render 'layouts/navbar' %>
+    <%= render 'layouts/left_side' %>
+
   <p id="notice"><%= notice %></p>
 
 
-
-  <div class="card ml-5">
-    <%= image_tag(@user.top(:coverimage)) %>
-      <div class="media">
-        <%= image_tag(@user.thumbnail(:photo)) %>
-          <div class="media-body ml-2">
-            <h5 class="mt-0"><%= @user.fullname %></h5>
-            <small class="username"><%= @user.username %></small>
-            <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
-          </div>
-  <%= link_to 'Edit', edit_user_path(@user) %> |
-  <%= link_to 'Back', root_path %>
+<div class="userpage">
+  <div class="card">
+    <%= render 'users/right_side' %>
+      <ul class="d-flex">
+        <div class="username_cover">
+          <li>
+            <%= image_tag(@user.top(:coverimage)) %>
+          </li>
+          <li class="follow-btn rounded">
+            <%= render 'users/follow_btn' %>
+          </li>
+          <li>
+              <small class="username"><%= @user.username %></small>
+          </li>
         </div>
+        <div class="media">
+          <div class="media-body mx-2">
+            <h5 class="username_right_side"><%= @user.fullname %></h5>
+            </div>
+        </div>
+    </ul>
   </div>
 </div>
+

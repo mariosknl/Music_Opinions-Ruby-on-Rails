@@ -19,8 +19,9 @@ class UsersController < ApplicationController
   end
 
   def show
-    @users = User.all
     @user = User.find(params[:id])
+    @users = User.all
+    @followers = @user.followers.includes(:photo)
   end
 
   def edit
@@ -46,10 +47,6 @@ class UsersController < ApplicationController
   private
 
   def set_user
-    if params[:id].to_i > User.last.id.to_i
-      redirect_to root_path
-      return
-    end
     @user = User.find(params[:id])
   end
 

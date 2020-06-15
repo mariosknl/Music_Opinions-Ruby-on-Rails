@@ -6,3 +6,38 @@
   position: relative;
   bottom: 1rem;
 }
+
+.userpage {
+  width: 80%;
+  height: 80vh;
+  position: absolute;
+  left: 19.9%;
+  top: 9%;
+
+  .media {
+    height: 100%;
+  }
+
+  .username_cover{
+    width: 80%;
+    height: 80%;
+  }
+
+  .username_right_side {
+    position: absolute;
+    top: 45%;
+    right: 5%;
+  }
+
+  .user_photo_right_side {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+  }
+
+  .follow-btn {
+    position: absolute;
+    top: 18%;
+    right: 23%;
+  }
+}

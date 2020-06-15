@@ -30,7 +30,7 @@ class User < ApplicationRecord
   end
 
   def top(_coverimage)
-    coverimage.variant(resize: '80%x25%!').processed
+    coverimage.variant(resize: '90%x70%').processed
   end
 
   def follow(user)
