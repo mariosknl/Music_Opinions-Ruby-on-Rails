@@ -4,10 +4,11 @@
 
 .userpage {
   width: 80%;
-  height: 80vh;
+  height: 100vh;
   position: absolute;
   left: 19.9%;
   top: 9%;
+  background-color: royalblue;
 
   .username {
     position: absolute;
@@ -31,6 +32,7 @@
   }
 
   .user_photo_right_side {
+    width: 20%;
     position: absolute;
     top: 15%;
     right: 10%;
@@ -40,5 +42,13 @@
     position: absolute;
     top: 18%;
     right: 23%;
+  }
+
+  .user_right_side_column {
+    width: 20%;
+    height: 80vh;
+    background-color: red;
+    position: absolute;
+    right: 0;
   }
 }

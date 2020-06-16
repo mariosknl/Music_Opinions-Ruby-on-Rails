@@ -5,8 +5,14 @@
   overflow-x: hidden;
 }
 
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
 .nav_size {
   width: 80%;
+  height: 9vh;
   position: absolute;
   top: 0;
   left: 20%;

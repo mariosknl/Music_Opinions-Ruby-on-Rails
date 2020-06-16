@@ -37,7 +37,7 @@ class User < ApplicationRecord
 
   def top(_coverimage)
     if coverimage.attached?
-      coverimage.variant(resize: '90%x70%').processed
+      coverimage.variant(resize: '70%x50%!').processed
     else
       '/default_coverimage.jpg'
     end

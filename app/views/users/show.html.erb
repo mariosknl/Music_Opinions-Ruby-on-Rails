@@ -1,40 +1,6 @@
+<%= render 'layouts/navbar' %>
+<%= render 'layouts/left_side' %>
 
-    <%= render 'layouts/navbar' %>
-    <%= render 'layouts/left_side' %>
+<p id="notice"><%= notice %></p>
 
-  <p id="notice"><%= notice %></p>
-
-
-<div class="userpage">
-  <div class="card">
-    <%= render 'users/right_side' %>
-      <ul class="d-flex">
-        <div class="username_cover">
-          <% if @user.photo.attached? %>
-            <li>
-              <%= image_tag(@user.top(:coverimage)) %>
-            </li>
-          <% else %>
-            <li>
-              <%= image_tag("/default_coverimage.jpg") %>
-            </li>
-          <% end %>
-          <li class="follow-btn rounded">
-            <%= render 'users/follow_btn' unless @user == current_user %>
-          </li>
-          <li>
-              <small class="username">@<%= @user.username %></small>
-          </li>
-          <li>
-            <h5 class="username_right_side"><%= @user.fullname %></h5>
-          
-          </li>
-        </div>
-        <div class="media">
-          <div class="media-body mx-2">
-          </div>
-        </div>
-    </ul>
-  </div>
-</div>
-
+<%= render 'users/right_side' %>

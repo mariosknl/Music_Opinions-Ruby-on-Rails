@@ -1,4 +1,2 @@
-<div class="d-flex align-items-center btn btn-warning btn-sm">
-  <i class="fas fa-sign-in-alt"></i>
-  <%= link_to 'Sign Out', session_path(current_user_id), method: :delete, class: 'nav-link text-white' %>
-</div>
+<i class="fas fa-sign-in-alt mr-1"></i>
+<%= link_to 'Sign Out', session_path(current_user_id), method: :delete, class: 'text-white' %>

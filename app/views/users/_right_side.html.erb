@@ -1,3 +1,41 @@
-<div class="user_photo_right_side">
-  <%= image_tag(@user.thumbnail(:photo)) %>
+
+<div class="userpage">
+  <div class="card">
+    <div class="user_right_side_column border-left">
+      <div class="user_photo_right_side">
+        <%= image_tag(@user.thumbnail(:photo)) %>
+        <div class="card-body">
+          <h5 class="username_right_side"><%= @user.fullname %></h5>
+          <small class="username">@<%= @user.username %></small>
+        </div>
+      </div>
+    </div>
+
+    
+      <%
+=begin%>
+ <ul class="d-flex">
+        <div class="username_cover">
+          <li>
+            <%= image_tag(@user.top(:coverimage)) %>
+          </li>
+          <li class="follow-btn rounded">
+            <%= render 'users/follow_btn' unless @user == current_user %>
+          </li>
+          <li>
+              
+          </li>
+          <li>
+            
+          
+          </li>
+        </div>
+        <div class="media">
+          <div class="media-body mx-2">
+          </div>
+        </div>
+    </ul> 
+<%
+=end%>
+  </div>
 </div>
