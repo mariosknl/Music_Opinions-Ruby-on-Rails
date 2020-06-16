@@ -9,24 +9,27 @@
   position: absolute;
   left: 20%;
   top: 9%;
-
+  
   .userpage-form {
     background-color: rgba(174, 174, 174, 0.591);
     height: 30vh;
+    overflow: hidden;
+  }
+
+  .list-group-item {
+    background-color: rgba(174, 174, 174, 0.591);
+  }
+
+  .time_ago {
+    position: absolute;
+    top: 70%;
+    right: 5%;
   }
 
   .username {
     position: absolute;
     top: 50%;
     right: 12%;
-  }
-
-  .user_right_side_column {
-    width: 20%;
-    height: 80vh;
-    position: absolute;
-    right: 0;
-    z-index: 5;
   }
 
   .username_cover {
@@ -52,8 +55,15 @@
     top: 18%;
     right: 23%;
   }
+}
 
+.right_side_user_column {
+  width: 25%;
+  position: absolute;
+  right: 0;
 
-
-
+  .right_side_list_small {
+    position: absolute;
+    bottom: 4%;
+  }
 }

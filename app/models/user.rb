@@ -43,6 +43,14 @@ class User < ApplicationRecord
     end
   end
 
+  def smaller(_photo)
+    if photo.attached?
+      photo.variant(resize: '50x50!').processed
+    else
+      '/default_profile.jpg'
+    end
+  end
+
   def follow(user)
     following = Follow.new(followerid: id, followedid: user.id)
     following.save

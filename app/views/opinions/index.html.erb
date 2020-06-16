@@ -12,7 +12,7 @@
         <%= image_tag opinion.user.thumbnail(:photo), class: "align-self-center user_photo" %>
         <div class="media-body ml-3">
           <%= opinion.text %>
-          <p class="mt-0 text-muted"><%= time_ago_in_words(opinion.created_at) %> </p>
+          <p class="mt-0 text-muted"><%= time_ago_in_words(opinion.created_at) %> ago </p>
           <hr>
         </div>
       </li>

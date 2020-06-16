@@ -1,7 +1,6 @@
 <div class="userpage">
-    <div class="card">
-      <%= image_tag(@user.top(:coverimage)) %>
-    
+  <div class="card my-0">
+    <%= image_tag(@user.top(:coverimage)) %>
     <div class="userpage-form p-2">
       <div>
         <label for="message" class="text-white mt-1 ml-1">Send your opinion to <%= @user.username %>:</label>
@@ -10,4 +9,5 @@
       </div>
     </div>
   </div>
+    <%= render 'shared_opinions' %>
 </div>
