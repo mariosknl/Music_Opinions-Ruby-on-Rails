@@ -10,6 +10,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .nav_size {
   width: 80%;
   height: 9vh;
@@ -43,7 +47,7 @@ a {
   position: fixed;
   left: 75%;
   top: 5rem;
-  height: 90vh;
+  height: 80vh;
   border-left: 1px solid rgb(196, 196, 196);
 
   .user_photo_right {
