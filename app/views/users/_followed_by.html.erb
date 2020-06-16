@@ -1,9 +1,13 @@
 <div class="media">
-  <% @user.followers.each do |follower| %>
-    <%= image_tag(follower.smaller(:photo), class: "rounded-circle") %>
-    <div class="media-body ml-2">
-      <p class="mt-0"><%= follower.fullname %></p>
-      <small class="right_side_list_small">@<%= follower.username %></small>
-    </div>
-  <% end %>
+  <ul class="list-group">
+    <% @user.followers.each do |follower| %>
+      <li class="list-group-item">
+        <%= image_tag(follower.smaller(:photo), class: "rounded-circle") %>
+        <div class="media-body ml-2">
+          <p class="mt-0"><%= follower.fullname %></p>
+          <small class="right_side_list_small">@<%= follower.username %></small>
+        </div>
+      </li>
+    <% end %>
+  </ul>
 </div>

@@ -1,25 +1,39 @@
+<%= render 'layouts/navbar' %>
 <p id="notice"><%= notice %></p>
+<%= render 'layouts/left_side' %>
+<div class="users_page">
+  <h1 class="text-center text-white rounded-circle bg-dark">Users Page</h1>
+    <div class="card-group col-12 mb-3 no-gutters">
+      <% @users[0..3].each do |user| %>
+      <% next if user == current_user %>
+        <div class="card col-12 list-group px-1">
+          <%= image_tag(user.thumbnail(:photo), class: 'list-item') %>
+              <%= link_to user.fullname, user_path(id: user.id), class: 'list-item text-center' %>
+                <small class= "list-item text-center">@<%= user.username %></small>
+                <small class="text-muted list-item text-center">Latest update:<%= time_ago_in_words(user.updated_at) %></small>
+            <div class="card-footer text-center list-group list-group-horizontal">
+              <%= link_to 'Profile', user, class: 'list-item badge badge-pill bg-dark text-white' %>
+              <%= render 'user_follow_btn', user: user %>
+            </div>
+        </div>
+      <% end %>
+    </div>
 
-<h1>Users</h1>
+    <div class="card-group col-12 mb-3">
+      <% @users[4..6].each do |user| %>
+        <div class="card">
+          <%= image_tag(user.thumbnail(:photo), class: 'rounded-cicle') %>
+            <div class="card-body">
+              <%= link_to user.fullname %>
+                <small>@<%= user.username %></small>
+                <small><small class="text-muted"><%= time_ago_in_words(user.updated_at) %></small></small>
+            </div>
+            <div class="card-footer text-center list-group list-group-horizontal">
+              <%= link_to 'Profile', user, class: 'list-item badge badge-pill bg-dark text-white' %>
+              <%= render 'user_follow_btn', user: user %>
+            </div>
+        </div>
+      <% end %>
+    </div>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @users.each do |user| %>
-      <tr>
-        <td><%= link_to 'Show', user %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New User', new_user_path %>

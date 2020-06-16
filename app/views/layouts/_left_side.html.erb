@@ -15,4 +15,12 @@
       <%= pluralize(current_user.followers.count, "followers") %>
     </li>
   </ul>
+  <ul class="list-group list-group-horizontal-xl text-center">
+    <li class="list-group-item bg-dark">
+      <%= link_to 'Users', users_path, class: 'text-white' %>
+    </li>
+    <li class="list-group-item bg-dark">
+      <%= link_to 'New User', new_user_path, class: 'text-white'  %>
+    </li>
+  </ul>
 </div>
