@@ -1,13 +1,7 @@
 <div class="userpage">
   <div class="card my-0">
     <%= image_tag(@user.top(:coverimage)) %>
-    <div class="userpage-form p-2">
-      <div>
-        <label for="message" class="text-white mt-1 ml-1">Send your opinion to <%= @user.username %>:</label>
-        <input type="text" class= "form-control text-muted" id="message_input" placeholder="@<%= @user.username %>">
-        <button type="submit" class="btn btn-primary">Send...</button>
-      </div>
-    </div>
   </div>
+  <p class="text-center h4">Opinions shared....</p>
     <%= render 'shared_opinions' %>
 </div>

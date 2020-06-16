@@ -1,4 +1,4 @@
-<div class="left-side m-0">
+<div class="left-side m-0 bg-dark">
   <div class="p-3 current_user d-flex mt-3 ml-2">
     <%= image_tag current_user.photo, class:'user_photo' if current_user.photo.attached? %>
     <div class="align-self-center text-break text-wrap">
@@ -7,18 +7,12 @@
     </div>
   </div>
 
-  <div class="container-lg ml-2">
-    <div class="row text-white">
-      <div class="col-6 ">
-        <p class="text-center">
-          <%= pluralize(current_user.followings.count, "following") %>
-        </p>
-      </div>
-      <div class="col-6 followers">
-        <p class="text-center">
-          <%= pluralize(current_user.followers.count, "followers") %>
-        </p>
-      </div>
-    </div>
-  </div>
+  <ul class="list-group list-group-horizontal text-center">
+    <li class="list-group-item bg-dark text-white">
+      <%= pluralize(current_user.followings.count, "following") %>
+    </li>
+    <li class="list-group-item bg-dark text-white">
+      <%= pluralize(current_user.followers.count, "followers") %>
+    </li>
+  </ul>
 </div>
