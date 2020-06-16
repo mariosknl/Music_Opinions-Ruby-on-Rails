@@ -10,9 +10,15 @@
     <%= render 'users/right_side' %>
       <ul class="d-flex">
         <div class="username_cover">
-          <li>
-            <%= image_tag(@user.top(:coverimage)) %>
-          </li>
+          <% if @user.photo.attached? %>
+            <li>
+              <%= image_tag(@user.top(:coverimage)) %>
+            </li>
+          <% else %>
+            <li>
+              <%= image_tag("/default_coverimage.jpg") %>
+            </li>
+          <% end %>
           <li class="follow-btn rounded">
             <%= render 'users/follow_btn' unless @user == current_user %>
           </li>

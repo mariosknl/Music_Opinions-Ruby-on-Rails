@@ -1,7 +1,9 @@
 class User < ApplicationRecord
   has_one_attached :coverimage
+  after_commit :add_default_coverimage, on: %i[create update]
 
   has_one_attached :photo
+  after_commit :add_default_photo, on: %i[create update]
 
   has_many :opinions, foreign_key: 'author_id', dependent: :destroy
 
@@ -26,11 +28,19 @@ class User < ApplicationRecord
                                  size_range: 0..1.megabytes }
 
   def thumbnail(_photo)
-    photo.variant(resize: '100x100!').processed
+    if photo.attached?
+      photo.variant(resize: '100x100!').processed
+    else
+      '/default_profile.jpg'
+    end
   end
 
   def top(_coverimage)
-    coverimage.variant(resize: '90%x70%').processed
+    if coverimage.attached?
+      coverimage.variant(resize: '90%x70%').processed
+    else
+      '/default_coverimage.jpg'
+    end
   end
 
   def follow(user)
@@ -49,5 +59,35 @@ class User < ApplicationRecord
   def opinions_showing
     ids = followings.ids << id
     Opinion.where(author_id: ids).order(id: :desc)
+  end
+
+  private
+
+  def add_default_coverimage
+    return if coverimage.attached?
+
+    coverimage.attach(
+      io: File.open(
+        Rails.root.join(
+          'app', 'assets', 'images', 'default_coverimage.jpg'
+        )
+      ),
+      filename: 'default_coverimage.jpg',
+      content_type: 'image/jpg'
+    )
+  end
+
+  def add_default_photo
+    return if photo.attached?
+
+    photo.attach(
+      io: File.open(
+        Rails.root.join(
+          'app', 'assets', 'images', 'default_profile.jpg'
+        )
+      ),
+      filename: 'default_profile.jpg',
+      content_type: 'image/jpg'
+    )
   end
 end
