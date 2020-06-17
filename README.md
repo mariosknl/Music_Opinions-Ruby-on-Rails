@@ -32,6 +32,32 @@ This is capstone for Ruby on Rails section. I was assigned to create a desktop a
 - Capybara
 - Heroku
 
+# LIVE DEMO
+
+# GETTING STARTED
+To get a local copy up and running follow these simple example steps.
+
+- Ruby 2.7
+- Rails 2.6
+
+# SETUP
+
+- ``git clone git@github.com:mariosknl/capstone_project_online_music_store.git`
+- cd `music_opinions_capstone_rails`
+- `bundle install`
+- `rails db:create && rails db:migrate && rails db:seed
+- Wait for the 'seeded' message
+
+# USAGE
+- Type `localhost:3000` to the address bar of your browser
+- From now on, you have full entrance to the application. You can sign up, sign in with your new account etc. 
+
+# TESTS
+- Open your terminal and be sure you are in the root directory.
+- Run `rspec`
+- Follow more information you can visit the `rspec` folder in a code editor to check each one of the test's cases already written.
+
+
 # AUTHORS
 
 Marios Kanellopoulos
@@ -45,10 +71,15 @@ Give a star if you like this project!
 
 # Acknowledgments
 - Microverse
+- Template based on [Gregoire Vella on Behance](https://www.behance.net/gregoirevella)
 - Unsplash.com (All images were taken from there! Thanks to everyone)
-- Kubilay Caglayan 
+- Kubilay Caglayan: [Portfolio](https://kubilaycaglayan.com/)
 
+# 🤝 Contributing
+Contributions, issues and feature requests are welcome!
+Feel free to check the issues page.
+Show your support
+Give a ⭐️ if you like this project!
 
-
-# License
+# 📝 License
 This project is MIT licensed

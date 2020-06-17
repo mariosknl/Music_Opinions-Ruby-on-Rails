@@ -12,4 +12,10 @@ kubilay = User.create(username: 'kubilay')
 frank = User.create(username: 'frank')
 taofeek = User.create(username: 'taofeek')
 Iryn = User.create(username: 'Iryn')
+marios.opinions.create(text: "Lets talk about rock'n'roll guys!")
+kubilay.opinions.create(text: "I'm a huge fan of Led Zeppelin!")
+taofeek.opinions.create(text: "I grew up with Black Sabbath!")
+frank.opinions.create(text: "No matter what rock'n'roll will never die!")
+marios.opinions.create(text: "It's ok to here some old bands but I prefer to hear heavy metal!")
+
 puts 'seeded'

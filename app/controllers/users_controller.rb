@@ -1,6 +1,6 @@
 class UsersController < ApplicationController
   def index
-    @users = User.all
+    @users = User.all.order(id: :desc).includes(:opinions)
   end
 
   def new
