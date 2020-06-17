@@ -2,7 +2,7 @@
 
 Rails.application.routes.draw do
   resources :opinions do
-    resources :comments
+    resources :comments, only: %i[create]
   end
   resources :sessions, only: %i[new create destroy]
   resources :followings, only: %i[new create destroy]

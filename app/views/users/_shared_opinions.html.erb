@@ -3,7 +3,7 @@
     <li class="list-group-item bg-light">
       <%= image_tag(@user.thumbnail(:photo)) %>
       <%= opinion.text %>
-      <small class="text-muted time_ago"><%= time_ago_in_words(opinion.created_at) %></small>
+      <small class="text-muted time_ago"><%= opinion.created_at.strftime('%I:%M %p') %></small>
     </li>
   </ul>
 <% end %>

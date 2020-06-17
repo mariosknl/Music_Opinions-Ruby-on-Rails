@@ -1,8 +1,10 @@
 class User < ApplicationRecord
   has_one_attached :coverimage
+
   after_commit :add_default_coverimage, on: %i[create update]
 
   has_one_attached :photo
+
   after_commit :add_default_photo, on: %i[create update]
 
   has_many :opinions, foreign_key: 'author_id', dependent: :destroy
@@ -14,6 +16,8 @@ class User < ApplicationRecord
   has_many :given_follows, foreign_key: :followerid, class_name: 'Follow'
 
   has_many :followings, through: :given_follows, source: :followed
+
+  has_many :comments, dependent: :destroy
 
   validates :username, presence: true, uniqueness: true, length: { maximum: 30 }
 

@@ -1,10 +1,11 @@
 class OpinionsController < ApplicationController
   before_action :authorized_user
   def index
-    @opinions = current_user.opinions_showing.includes(:user)
+    @opinions = current_user.opinions_showing.includes(:user, :comments)
     @opinion = current_user.opinions.build
     @users = User.all
     @user = current_user
+    @comment = Comment.new
   end
 
   def new
@@ -12,7 +13,7 @@ class OpinionsController < ApplicationController
   end
 
   def create
-    @opinion = current_user.opinions.build(opinion_params)
+    @opinion = current_user.opinions.new(opinion_params)
 
     flash[:notice] = if @opinion.save
                        'Opinion shared!'
@@ -23,10 +24,6 @@ class OpinionsController < ApplicationController
   end
 
   private
-
-  def set_opinion
-    @opinion = Opinion.find(params[:id])
-  end
 
   def opinion_params
     params.require(:opinion).permit(:author_id, :text)
