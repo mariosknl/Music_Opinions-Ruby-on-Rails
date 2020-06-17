@@ -3,14 +3,13 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 .welcome_photo {
-  background-image: image-url('welcome_photo.jpeg');
+  background-image: image-url('welcome_photo.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 100vh;
 }
 
 .login {
-  position: relative;
-  top: 20%;
-  left: 30%;
+  opacity: 0.8;
+  width: 100%;
 }
