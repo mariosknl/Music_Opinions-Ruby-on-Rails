@@ -8,8 +8,8 @@
 <div class="nav">
   <%= simple_form_for @user, url: sessions_path do |f| %>
     <%= f.text_field :username, placeholder: 'Username',
-          required: true, class: 'text-center nav-link mr-2' %>
-    <%= f.submit 'Sign In', class: 'btn btn-light text-dark btn-block nav-item' %>
+          required: true, class: 'text-center nav-link' %>
+    <%= f.submit 'Sign In', class: 'btn btn-light text-dark btn-block nav-item mr-2' %>
   <% end %>
   <%= render 'sessions/sign_up' %>
 </div>

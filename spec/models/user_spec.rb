@@ -50,17 +50,37 @@ RSpec.describe User, type: :model do
     end
   end
 
-  describe 'instance methods' do
+  describe 'user methods' do
     let(:user) { User.create(username: 'marios', fullname: 'mariosknl') }
-    let(:user2) { User.create(username: 'kubilay', fullname: 'kubilay caglayan') }
-    let(:user3) { User.create(username: 'teo', fullname: 'teo ntenti') }
-    let(:follow) { Follow.create(followerid: user.id, followedid: user2.id) }
-    let(:follow2) { Follow.create(followerid: user.id, followedid: user3.id) }
-    let(:follow3) { Follow.create(followerid: user2.id, followedid: user3.id) }
+    let(:user2) { User.create(username: 'teo', fullname: 'teo ntenti') }
+    let(:user3) { User.create(username: 'kubilay', fullname: 'kubilay caglayan') }
+    let(:follow) { Follow.create(followerid: user.id, followedid: user3.id) }
+    let(:follow2) { Follow.create(followerid: user2.id, followedid: user3.id) }
+    let(:follow3) { Follow.create(followerid: user.id, followedid: user2.id) }
 
     it 'follows a user' do
       follow
-      expect(user.follow(user3).to(be true))
+      expect(user.following?(user3)).to be true
+    end
+
+    it 'unfollows a user' do
+      follow
+      user.unfollow(user3)
+      expect(user.following?(user3)).to be false
+    end
+
+    it 'shows the shared opinions' do
+      follow
+      user3.opinions.create(text: 'hi there friend')
+      expect(user.opinions_showing).to eq(user3.opinions)
+    end
+
+    it 'returns true if photo is attached' do
+      expect(user.photo).to be_valid
+    end
+
+    it 'returns true if coverimage is attached' do
+      expect(user.coverimage).to be_valid
     end
   end
 end
