@@ -34,6 +34,9 @@ This is capstone for Ruby on Rails section. I was assigned to create a desktop a
 
 # LIVE DEMO
 
+# LIVE LINK PRESENTATION
+- [video-presentation](https://www.loom.com/share/fb0a13e7f6284e12b5dc014938ff2823)
+
 # GETTING STARTED
 To get a local copy up and running follow these simple example steps.
 
