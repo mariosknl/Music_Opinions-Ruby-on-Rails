@@ -16,7 +16,7 @@
           <p class="mt-0 text-muted"><%= opinion.created_at.strftime('%I:%M %p') %></p>
           <hr>
           <%= simple_form_for [opinion, @comment], local: true do |f| %> 
-        <%= image_tag opinion.user.thumbnail(:photo), class: "align-self-center user_photo rounded-circle" %>
+        <%= image_tag opinion.user.user_page_photo(:photo), class: "align-self-center user_photo rounded-circle" %>
             <%= f.input :body, label: 'Comment', placeholder: "Any comments...?" %>
             <%= f.button :submit, 'Comment', class: 'btn btn-dark', id: 'comment_btn' %>
           <% end %>

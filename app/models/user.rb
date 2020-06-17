@@ -51,7 +51,15 @@ class User < ApplicationRecord
     if photo.attached?
       photo.variant(resize: '50x50!').processed
     else
-      '/default_profile.jpg'
+      '/default_coverimage.jpg'
+    end
+  end
+
+  def user_page_photo(_photo)
+    if photo.attached?
+      photo.variant(resize: '200x200')
+    else
+      photo.variant('/default_profile.jpg', resize: '70%x50%!')
     end
   end
 

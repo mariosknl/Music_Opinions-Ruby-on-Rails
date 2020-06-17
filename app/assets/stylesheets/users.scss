@@ -65,4 +65,12 @@
   position: relative;
   width: 80%;
   left: 20%;
+
+  .card_user_page {
+    height: 50vh;
+
+    img {
+      height: 80%;
+    }
+  }
 }
