@@ -1,10 +1,10 @@
 <%= render 'layouts/navbar' %>
-<p id="notice"><%= notice %></p>
+<p id="notice" class="notifications"><%= notice %></p>
 <%= render 'layouts/left_side' %>
 <div class="users_page">
   <h1 class="text-center text-white rounded-circle bg-dark">Users Page</h1>
     <div class="card-group col-12 mb-3 no-gutters">
-      <% @users[0..3].each do |user| %>
+      <% @users[0..2].each do |user| %>
       <% next if user == current_user %>
         <div class="card col-12 list-group px-1">
           <%= image_tag(user.thumbnail(:photo), class: 'list-item') %>
@@ -19,8 +19,9 @@
       <% end %>
     </div>
 
-    <div class="card-group col-12 mb-3">
-      <% @users[4..6].each do |user| %>
+    <div class="card-group col-12 mb-3 no-gutters">
+      <% @users[3..6].each do |user| %>
+    <% next if user == current_user %>
         <div class="card">
           <%= image_tag(user.thumbnail(:photo), class: 'rounded-cicle') %>
             <div class="card-body">
