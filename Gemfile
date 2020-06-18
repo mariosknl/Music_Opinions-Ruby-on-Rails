@@ -39,7 +39,7 @@ group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'database_cleaner', '~> 1.8', '>= 1.8.5'
   gem 'rspec-rails', '~> 4.0', '>= 4.0.1'
-  
+
   gem 'sqlite3', '~> 1.4'
 end
 
