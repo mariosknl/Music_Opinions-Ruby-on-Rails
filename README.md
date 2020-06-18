@@ -1,6 +1,6 @@
 # Ruby On Rails Capstone: Twitter Redesign - (Theme: Music Opinions Sharing)
 
-This is a capstone for Ruby on Rails section. I was assigned to create a desktop application based on the Twitter template. The template I used while creating this application is inspired by the Gregoire Vella project on behance.net. 
+This is a capstone for Ruby on Rails section. I assigned to create a desktop application based on the Twitter template. The template I used while creating this application is inspired by the Gregoire Vella project on behance.net. 
 
 # WELCOME PAGE
 <img width="1811" alt="Screenshot 2020-06-17 at 5 57 10 PM" src="https://user-images.githubusercontent.com/50610396/84914181-fdb79680-b0c3-11ea-93ee-72c47d961ade.png">
