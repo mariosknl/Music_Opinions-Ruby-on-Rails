@@ -42,7 +42,7 @@ This is capstone for Ruby on Rails section. I was assigned to create a desktop a
 To get a local copy up and running follow these simple example steps.
 
 - Ruby 2.7
-- Rails 2.6
+- Rails 6.0.3
 
 # SETUP
 
