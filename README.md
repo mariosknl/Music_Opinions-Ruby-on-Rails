@@ -32,7 +32,8 @@ This is capstone for Ruby on Rails section. I was assigned to create a desktop a
 - Capybara
 - Heroku
 
-# LIVE DEMO
+# LIVE VERSION
+- [heroku-link](https://protected-sierra-90234.herokuapp.com/)
 
 # LIVE LINK PRESENTATION
 - [video-presentation](https://www.loom.com/share/fb0a13e7f6284e12b5dc014938ff2823)

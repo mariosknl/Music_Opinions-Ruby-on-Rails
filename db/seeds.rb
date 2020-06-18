@@ -19,3 +19,4 @@ frank.opinions.create(text: "No matter what rock'n'roll will never die!")
 marios.opinions.create(text: "It's ok to here some old bands but I prefer to hear heavy metal!")
 
 puts 'seeded'
+
