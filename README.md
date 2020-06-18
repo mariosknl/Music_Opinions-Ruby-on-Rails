@@ -64,7 +64,7 @@ To get a local copy up and running follow these simple example steps.
 
 # AUTHORS
 
-Marios Kanellopoulos
+👤 Marios Kanellopoulos
 - Github: [@mariosknl](https://github.com/mariosknl)
 - Twitter: [@mariosknl](https://twitter.com/MariosKnl)
 - Linkedln: [marios-kanellopoulos](https://www.linkedin.com/in/marios-kanellopoulos)
