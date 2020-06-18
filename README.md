@@ -46,7 +46,7 @@ To get a local copy up and running follow these simple example steps.
 
 # SETUP
 
-- ``git clone git@github.com:mariosknl/capstone_project_online_music_store.git`
+- `git clone git@github.com:mariosknl/capstone_project_online_music_store.git`
 - cd `music_opinions_capstone_rails`
 - `bundle install`
 - `rails db:create && rails db:migrate && rails db:seed
