@@ -1,6 +1,6 @@
 # Ruby On Rails Capstone: Twitter Redesign - (Theme: Music Opinions Sharing)
 
-This is capstone for Ruby on Rails section. I was assigned to create a desktop application based on the Twitter template. The template I used while creating this application is inspired by Gregoire Vella project on behance.net. 
+This is a capstone for Ruby on Rails section. I was assigned to create a desktop application based on the Twitter template. The template I used while creating this application is inspired by the Gregoire Vella project on behance.net. 
 
 # WELCOME PAGE
 <img width="1811" alt="Screenshot 2020-06-17 at 5 57 10 PM" src="https://user-images.githubusercontent.com/50610396/84914181-fdb79680-b0c3-11ea-93ee-72c47d961ade.png">
@@ -16,12 +16,12 @@ This is capstone for Ruby on Rails section. I was assigned to create a desktop a
 
 
 # FEATURES
-- You can sign up with username and fullname. Also, you can add your own photo and coverimage for your profile. If you decide not to do it, both of them with be assigned with the default ones.
+- You can sign up with a username and full name. Also, you can add your own photo and cover image for your profile. If you decide not to do it, both of them with be assigned with the default ones.
 - You can sign in only with your username.
 - When signing in, you can post your opinion about anything you want around music.
 - You can follow other users in the application.
 - You can leave your comment on other's opinions
-- You can visit each user account individually or visit the users page.
+- You can visit each user account individually or visit the users' page.
 
 
 # BUILT WITH
@@ -54,7 +54,7 @@ To get a local copy up and running follow these simple example steps.
 
 # USAGE
 - Type `localhost:3000` to the address bar of your browser
-- From now on, you have full entrance to the application. You can sign up, sign in with your new account etc. 
+- From now on, you have full entrance to the application. You can sign up, sign in with your new account, etc. 
 
 # TESTS
 - Open your terminal and be sure you are in the root directory.
@@ -80,7 +80,7 @@ Give a star if you like this project!
 - Kubilay Caglayan: [Portfolio](https://kubilaycaglayan.com/)
 
 # 🤝 Contributing
-Contributions, issues and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!
 Feel free to check the issues page.
 Show your support
 Give a ⭐️ if you like this project!
