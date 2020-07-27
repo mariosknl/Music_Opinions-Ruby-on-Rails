@@ -1,0 +1,8 @@
+<div class="userpage">
+  <div class="card my-0">
+    <%= image_tag(@user.top(:coverimage)) %>
+  </div>
+  <p class="text-center h4">Opinions shared....</p>
+  <%= link_to 'Edit User Account', edit_user_path  if @user == current_user %> 
+    <%= render 'shared_opinions' %>
+</div>

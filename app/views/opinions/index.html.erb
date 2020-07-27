@@ -1,0 +1,28 @@
+
+    <%= render 'layouts/navbar' %>
+    <%= render 'layouts/left_side' %>
+    <%= render 'layouts/right_side' %>
+  <%= render 'form' %>
+
+
+<div class="opinions">
+  <% @opinions.each do |opinion| %>
+    <ul class="list-unstyled">
+      <li class="media border ml-4">
+        <div class="media-body ml-3">
+          <%= image_tag opinion.user.smaller(:photo) %>
+          <%= opinion.text %>
+          <p><%= pluralize(opinion.comments.count, 'Comment') %></p>
+          <p class="mt-0 text-muted"><%= opinion.created_at.strftime('%I:%M %p') %></p>
+          <hr>
+          <%= simple_form_for [opinion, @comment], local: true do |f| %> 
+        <%= image_tag opinion.user.user_page_photo(:photo), class: "align-self-center user_photo rounded-circle" %>
+            <%= f.input :body, label: 'Comment', placeholder: "Any comments...?" %>
+            <%= f.button :submit, 'Comment', class: 'btn btn-dark', id: 'comment_btn' %>
+          <% end %>
+          <%= show_comments(opinion) %>
+
+        </div>
+      </li>
+    </ul>
+  <% end %>

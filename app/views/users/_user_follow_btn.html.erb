@@ -1,0 +1,7 @@
+<div class="mr-3">
+  <% if !current_user.following?(user) %>
+    <%= link_to '<i class="fas fa-plus-circle"></i> Follow'.html_safe, followings_path(id: user.id), method: :post, class: 'text-dark' unless @user == current_user %>
+  <% else %>
+    <%= link_to '<i class="fas fa-minus-circle"></i> Unfollow'.html_safe, following_path(id: user.id), method: :delete, class: 'text-dark' %>
+  <% end %>
+</div>

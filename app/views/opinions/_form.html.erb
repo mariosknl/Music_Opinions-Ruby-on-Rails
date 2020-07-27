@@ -1,0 +1,12 @@
+<div class="opinion-form mx-auto p-1">
+  <%= simple_form_for(@opinion, local: true) do |f| %>
+    <%= f.error_notification %>
+    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+    <div class="form-inputs">
+        <%= f.input :text, label:'Share your opinion.....', wrapper: false,
+        placeholder: "Compose a new opinion..." %>
+    </div>
+    <%= f.button :submit, class: "btn btn-dark" %>
+  <% end %> 
+</div>
+<hr>

@@ -1,0 +1,23 @@
+<div class="right_side_user_column">
+  <ul class="nav d-flex align-items-center justify-content-center">
+    <li class="nav-item rounded-circle">
+      <%= render 'follow_btn' %>
+    </li>
+    <li class="nav-item rounded-circle mr-4">
+      <%= image_tag(@user.thumbnail(:photo)) %>
+    </li>
+  </ul>
+  <ul class="list-group list-group-horizontal mt-5 text-center mx-0">
+    <li class="list-group-item flex-fill px-0">
+      <small><%= pluralize(@user.opinions.count, 'Opinions') %></small>
+    </li>
+    <li class="list-group-item flex-fill px-0">
+      <small><%= pluralize(@user.followings.count, 'following') %></small>
+    </li>
+    <li class="list-group-item flex-fill px-0">
+      <small><%= pluralize(@user.followers.count, 'followers') %></small>
+    </li>
+  </ul>
+  <p class="text-center py-3 border-bottom">FOLLOWED BY</p>
+  <%= render 'followed_by' %>
+</div>

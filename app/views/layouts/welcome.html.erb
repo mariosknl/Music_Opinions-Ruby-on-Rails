@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Music Opinions</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2c6133bcaa.js" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+    <% if flash[:notice] %>
+      <div class="notification">
+        <p class="notice"><%= notice %></p>
+      </div>
+    <%end %>
+    <% if flash[:alert] %>
+      <div class="notification bg-danger">
+        <p class="alert"><%= alert %></p>
+      </div>
+    <% end %>
+
+  <body class="text-center welcome_photo" data-gr-c-s-loaded="true" cz-shortcut-listen="true" >
+    <%= render 'sessions/new' %>
+      <%= yield %>
+  </body>
+</html>

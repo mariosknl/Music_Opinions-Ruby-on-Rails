@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.notifications {
+  position: relative;
+  left: 25%;
+  top: 15%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.nav_size {
+  width: 80%;
+  height: 9vh;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  background-color: #50a1df;
+}
+
+.left-side {
+  width: 20%;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  font-size: 0.8rem;
+}
+
+.user_photo {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.notification {
+  position: relative;
+  left: 22%;
+}
+
+.right_side {
+  width: 20%;
+  position: fixed;
+  left: 75%;
+  top: 5rem;
+  height: 80vh;
+  border-left: 1px solid rgb(196, 196, 196);
+
+  .user_photo_right {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+.opinion-form {
+  width: 54.6%;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
+
+.opinions {
+  position: absolute;
+  width: 56%;
+  height: auto;
+  top: 45%;
+  left: 18%;
+}

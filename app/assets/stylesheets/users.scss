@@ -1,0 +1,76 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.userpage {
+  width: 55%;
+  height: 100vh;
+  position: absolute;
+  left: 20%;
+  top: 9%;
+
+  .list-group-item {
+    background-color: rgba(174, 174, 174, 0.591);
+  }
+
+  .time_ago {
+    position: absolute;
+    top: 70%;
+    right: 5%;
+  }
+
+  .username {
+    position: absolute;
+    top: 50%;
+    right: 12%;
+  }
+
+  .username_cover {
+    width: 80%;
+    height: 80%;
+  }
+
+  .username_right_side {
+    position: absolute;
+    top: 45%;
+    right: 5%;
+  }
+
+  .user_photo_right_side {
+    width: 20%;
+    position: absolute;
+    top: 15%;
+    right: 10%;
+  }
+
+  .follow-btn {
+    position: absolute;
+    top: 18%;
+    right: 23%;
+  }
+}
+
+.right_side_user_column {
+  width: 25%;
+  position: absolute;
+  right: 0;
+
+  .right_side_list_small {
+    position: absolute;
+    bottom: 4%;
+  }
+}
+
+.users_page {
+  position: relative;
+  width: 80%;
+  left: 20%;
+
+  .card_user_page {
+    height: 50vh;
+
+    img {
+      height: 80%;
+    }
+  }
+}

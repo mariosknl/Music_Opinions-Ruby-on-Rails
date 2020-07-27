@@ -1,0 +1,20 @@
+
+<%= simple_form_for(@user) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :username, hint: 'Your Username please', error: 'Username is mandatory, please specify one' %>
+    <%= f.input :fullname, label: 'Fullname please' %>
+    <%= f.label :coverimage, label: 'Cover Image' %>
+    <%= f.file_field :coverimage %>
+    <%= f.label :photo, label: 'Profile Picture' %>
+    <%= f.file_field :photo, error: 'Profile picture is needed' %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
+
+

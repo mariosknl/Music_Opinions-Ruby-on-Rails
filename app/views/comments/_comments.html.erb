@@ -1,0 +1,22 @@
+<div class="comments mt-1">
+  <% comments.each do |comment| %>
+    <div class="media my-1">
+      <%= image_tag comment.user.smaller(:photo),
+      class: 'align-self-end mr-3 rounded-circle' %>
+      <div class="media-body w-75">
+        <div class="w-100" >
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="text-muted">
+              <%= link_to "#{comment.user.username}", user_path(comment.user.id) %>
+            </span>
+            <span class="ml-1">
+              at:
+              <%= [comment.created_at.strftime('%I:%M %p')] %>
+            </span>
+          </p>
+          <p class="text-break text-wrap"> <%= comment.body %> </p>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
