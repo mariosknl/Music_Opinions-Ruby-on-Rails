@@ -10,6 +10,6 @@
     "stylelint": "14.6.1",
     "stylelint-config-standard": "25.0.0",
     "stylelint-scss": "4.2.0",
-    "webpack-dev-server": "4.8.0"
+    "webpack-dev-server": "4.8.1"
   }
 }
