@@ -7,7 +7,7 @@
   },
   "version": "0.1.0",
   "devDependencies": {
-    "stylelint": "14.7.1",
+    "stylelint": "14.8.2",
     "stylelint-config-standard": "25.0.0",
     "stylelint-scss": "4.2.0",
     "webpack-dev-server": "4.8.1"
