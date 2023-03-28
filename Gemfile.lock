@@ -180,7 +180,7 @@ GEM
       coderay (~> 1.1)
       method_source (~> 1.0)
     public_suffix (4.0.7)
-    puma (6.0.0)
+    puma (6.1.1)
       nio4r (~> 2.0)
     racc (1.6.0)
     rack (2.2.4)
@@ -322,7 +322,7 @@ DEPENDENCIES
   webpacker (~> 5.0)
 
 RUBY VERSION
-   ruby 3.1.2p20
+   ruby 3.2.1p31
 
 BUNDLED WITH
    2.1.4
