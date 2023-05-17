@@ -295,7 +295,7 @@ PLATFORMS
 
 DEPENDENCIES
   activestorage-validator (~> 0.3.0)
-  better_errors (~> 2.7, >= 2.7.1)
+  better_errors (~> 2.7, >= 2.10.0)
   binding_of_caller (~> 1.0.0)
   bootsnap (>= 1.4.2)
   byebug
