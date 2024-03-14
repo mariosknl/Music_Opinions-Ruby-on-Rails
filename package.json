@@ -8,6 +8,6 @@
   "version": "0.1.0",
   "devDependencies": {
     "stylelint-scss": "6.2.1",
-    "webpack-dev-server": "5.0.2"
+    "webpack-dev-server": "5.0.3"
   }
 }
