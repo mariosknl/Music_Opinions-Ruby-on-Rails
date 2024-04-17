@@ -40,7 +40,7 @@ group :development, :test do
   gem 'database_cleaner', '~> 2.0', '>= 2.0.1'
   gem 'rspec-rails', '~> 6.0', '>= 6.0.1'
 
-  gem 'sqlite3', '~> 1.4'
+  gem 'sqlite3', '~> 2.0'
 end
 
 group :development do
