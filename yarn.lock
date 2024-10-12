@@ -6546,10 +6546,10 @@ stylehacks@^4.0.0:
     postcss "^7.0.0"
     postcss-selector-parser "^3.0.0"
 
-stylelint-scss@6.6.0:
-  version "6.6.0"
-  resolved "https://registry.npmjs.org/stylelint-scss/-/stylelint-scss-6.6.0.tgz"
-  integrity sha512-aK2Rdt41Jt9Gv/ClMN5BYhP7xR3IEoRMDKpJkIDI9frZQ6KkxeLishusxs2JtEGZdJWXvPoBOhswNxj3gx8L/g==
+stylelint-scss@6.7.0:
+  version "6.7.0"
+  resolved "https://registry.npmjs.org/stylelint-scss/-/stylelint-scss-6.7.0.tgz"
+  integrity sha512-RFIa2A+pVWS5wjNT+whtK7wsbZEWazyqesCuSaPbPlZ8lh2TujwVJSnCYJijg6ChZzwI8pZPRZS1L6A9aCbXDg==
   dependencies:
     css-tree "2.3.1"
     is-plain-object "5.0.0"
