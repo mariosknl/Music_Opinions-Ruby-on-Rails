@@ -10,7 +10,7 @@ jobs:
     name: Rubocop
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: 2.6.x
@@ -24,7 +24,7 @@ jobs:
     name: Stylelint
     runs-on: ubuntu-24.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: actions/setup-node@v4
         with:
           node-version: "22.x"
